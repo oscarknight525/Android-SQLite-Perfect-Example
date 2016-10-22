@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:id="@+id/fragment_switch"
+        android:layout_width="match_parent"
+        android:layout_height="436dp"
+        android:name="com.mobile.lance.iconnect.FragmentNotification" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_weight="4">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:id="@+id/imageView"
+                android:layout_gravity="center"
+                android:src="@mipmap/notification"
+                android:onClick="onNotificationImageClick"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notifications"
+                android:id="@+id/button3"
+                android:textSize="17dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/mybutton"
+                android:onClick="FragmentNotificationsClick"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="3">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:id="@+id/imageView2"
+                android:layout_gravity="center"
+                android:src="@mipmap/message"
+                android:onClick="onMessagesImagesClick"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Messages"
+                android:id="@+id/button4"
+                android:textSize="17dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/mybutton"
+                android:layout_marginLeft="1dp"
+                android:onClick="FragmentMessagesClick"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2.5">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:id="@+id/imageView3"
+                android:layout_gravity="center"
+                android:src="@mipmap/friends"
+                android:onClick="onFriendsImageClick"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Friends"
+                android:id="@+id/button5"
+                android:textSize="17dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/mybutton"
+                android:layout_marginLeft="1dp"
+                android:onClick="FragmentFriendsClick"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1.5">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageView4"
+                android:layout_gravity="center"
+                android:src="@mipmap/me"
+                android:onClick="onMeImageClcik"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Me"
+                android:id="@+id/button6"
+                android:textSize="17dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/mybutton"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="1dp"
+                android:onClick="FragmentMeClick"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

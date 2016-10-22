@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/img_editprofile_photo"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/profile_image"
+                android:onClick="onImageGalleryClicked"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click image to upload your profile photo"
+                android:id="@+id/textViewUpload"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:textSize="18dp" />
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:id="@+id/editTextUserName"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bk_textfield"
+                android:hint="User Name"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:id="@+id/editTextF"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bk_textfield"
+                android:hint="First Name"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:id="@+id/editTextL"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bk_textfield"
+                android:hint="Last Name"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:id="@+id/editTextAddress"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bk_textfield"
+                android:hint="Address"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:id="@+id/editTextCity"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bk_textfield"
+                android:hint="City"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:id="@+id/editTextState"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bk_textfield"
+                android:hint="State"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:id="@+id/editTextCode"
+                android:inputType="number"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bk_textfield"
+                android:hint="Zip Code"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/editTextPhoneNumber"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:hint="Phone Number"
+                android:textSize="20dp"
+                android:background="@drawable/bk_textfield" />
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:id="@+id/editTextBirth"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bk_textfield"
+                android:hint="Birth Date"
+                android:focusable="false"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:id="@+id/editTextGender"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bk_textfield"
+                android:hint="Gender"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:id="@+id/editTextDescription"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bk_textfield"
+                android:hint="Description "
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="320dp"
+                android:layout_height="match_parent"
+                android:text="Save Profile"
+                android:id="@+id/SaveProfileButton"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/mybutton"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:textSize="20dp"
+                android:onClick="onSaveProfileClick"/>
+
+            <Button
+                android:layout_width="320dp"
+                android:layout_height="match_parent"
+                android:text="Cancel To Clear Form"
+                android:id="@+id/ClearFormButton"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/mybutton"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:textSize="20dp"
+                android:onClick="onClearFormButtonClick"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageView5"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

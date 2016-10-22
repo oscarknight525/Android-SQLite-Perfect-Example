@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layout_search"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:id="@+id/imageViewSearch"
+            android:src="@mipmap/search"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp" />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:id="@+id/editTextSearch"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="0.84"
+            android:hint="Search..."
+            android:background="@drawable/bk_textfield"
+            android:inputType="textEmailAddress"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Search Friends"
+            android:id="@+id/SearchFriendsButton"
+            android:layout_marginTop="29dp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorBackgroundButton"
+            android:layout_weight="0.11"
+            android:layout_marginLeft="10dp"
+            android:onClick="onSearchFriendsClick"/>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:text="Back"
+        android:id="@+id/btn_find_friend_back"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorBackgroundButton"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:id="@+id/layout_search_result"
+        android:layout_above="@id/btn_find_friend_back"
+        android:layout_below="@id/layout_search"
+        android:windowSoftInputMode="adjustNothing">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listViewFindFriends" />
+    </LinearLayout>
+
+
+</RelativeLayout>

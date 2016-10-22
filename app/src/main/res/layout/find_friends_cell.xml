@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/linearLayout"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="195dp"
+        android:layout_height="38dp"
+        android:id="@+id/textViewCellEmail"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="0.26"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="126dp"
+        android:layout_height="37dp"
+        android:text="Add Friend"
+        android:id="@+id/buttonAddFriends"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/mybutton"
+        android:textColor="@color/colorWhite"
+        android:layout_marginRight="30dp"
+        android:onClick="onAddFriendClick"/>
+</LinearLayout>

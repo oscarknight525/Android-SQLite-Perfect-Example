@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:layout_width="109dp"
+        android:layout_height="128dp"
+        android:id="@+id/PostImageView"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/photo"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onPostImageClick"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click image to upload your photo"
+        android:id="@+id/textView_upload_photo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="342dp"
+        android:layout_height="126dp"
+        android:id="@+id/editText_comment"
+        android:layout_gravity="center_horizontal"
+        android:hint="Say something..."
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bk_textfield"
+        android:maxLines="10"
+        android:lines="4"
+        android:gravity="top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="1"
+        android:layout_marginBottom="1dp">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Post"
+            android:id="@+id/CreatePostButton"
+            android:background="@drawable/mybutton"
+            android:layout_marginTop="30dp"
+            android:layout_weight="0.23"
+            android:textColor="@color/colorWhite"
+            android:onClick="onCreatePostButtonClick"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:id="@+id/BackButtonOnCreatePost"
+            android:background="@drawable/mybutton"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="80dp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginBottom="1dp"
+            android:onClick="onBackButtonCreatePostClick"/>
+    </LinearLayout>
+
+</LinearLayout>

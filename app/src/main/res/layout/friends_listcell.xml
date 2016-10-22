@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="Pennt West"
+        android:id="@+id/textViewFullName"
+        android:textSize="15dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:textColor="@color/colorBackgroundButton"
+        android:layout_weight="1" />
+
+    <Button
+        android:layout_width="61dp"
+        android:layout_height="41dp"
+        android:text="Remove"
+        android:id="@+id/RemoveButton"
+        android:background="@drawable/bk_textfield"
+        android:layout_marginLeft="10dp"
+        android:onClick="onRemoveClick"/>
+
+    <Button
+        android:layout_width="87dp"
+        android:layout_height="41dp"
+        android:text="View Posts"
+        android:id="@+id/ViewPostsButton"
+        android:background="@drawable/bk_textfield"
+        android:layout_marginLeft="5dp"
+        android:onClick="onViewPostClick"/>
+</LinearLayout>

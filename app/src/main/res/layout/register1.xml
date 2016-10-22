@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/colorWhite">
+
+    <EditText
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:id="@+id/TextFirstName"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bk_textfield"
+        android:hint="First Name"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:id="@+id/TextLastName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:hint="Last Name"
+        android:background="@drawable/bk_textfield"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/TextEmail"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:hint="Email"
+        android:background="@drawable/bk_textfield"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/TextPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/bk_textfield"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+        android:textIsSelectable="false"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/TextConfirmPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/bk_textfield"
+        android:hint="Confirm Password"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:text="SIGN UP"
+        android:id="@+id/SignupButton"
+        android:layout_below="@+id/TextConfirmPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/mybutton"
+        android:textColor="@color/colorWhite"
+        android:onClick="onSignupClick"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:text="CANCEL TO LOG IN"
+        android:id="@+id/CancelButton"
+        android:layout_below="@+id/SignupButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/mybutton"
+        android:textColor="@color/colorWhite"
+        android:onClick="onCancelLoginClick"
+        android:textSize="20dp" />
+
+</LinearLayout>
